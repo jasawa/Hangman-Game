@@ -11,4 +11,26 @@ body {
 
 #intro {
     text-align: center;
+    margin-bottom: 40px;
+}
+
+#container-on-left {
+    float: left;
+    width: 450px;
+    text-align: center;
+    border: #777777 2px solid;
+    margin-left: 140px;
+    padding-top: 25px;
+}
+
+#container-on-right {
+    float: right;
+    width: 450px;
+    border: 2px solid red;
+    margin-right: 140px;
+    padding-top: 25px;
+}
+
+.ireland-cities-image {
+    width: 300px;
 }
