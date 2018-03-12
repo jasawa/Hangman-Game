@@ -29,12 +29,24 @@ for (var i=0; i<cityUpperArray.length; i++){
 }
 console.log(underlineArray);
 
+// removes the commas in array
 var underlineDisplayArray = underlineArray.join(" ");
 console.log(underlineDisplayArray);
 
 // output underlineArray
 var targetLines = document.getElementById("current-word");
     targetLines.textContent = underlineDisplayArray;
+    console.log(targetLines);
 
+// initialize number of wins    
+var wins = 0;
+var targetWins = document.getElementById("wins");
+    targetWins.textContent = wins;
+    console.log(targetWins);
 
+// initialize number of guesses remaining    
+var guessesRemaining = 12;
+var targetGuessNum = document.getElementById("guesses");
+    targetGuessNum.textContent = guessesRemaining;
+    console.log(targetGuessNum);
 
