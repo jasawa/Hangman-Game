@@ -8,7 +8,7 @@ var city = cities[Math.floor(Math.random() * cities.length)];
 console.log(city);
 
 //
-// this is test: remember to remove and add at end,   remove city from cities array
+//  remove currebt city from cities array
 var indexOfCity = cities.indexOf(city);
 cities.splice(indexOfCity, 1);
 console.log(cities);
@@ -97,10 +97,8 @@ var userGuess = "";
             console.log("remainingLetters = " + remainingLetters)
             console.log("guesses that remain" + guessesRemaining);
 
-            if (guessesRemaining = 0) {
-                return;
-            }
-            }
+            
+        }
         
         
     //}  
