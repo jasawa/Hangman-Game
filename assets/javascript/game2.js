@@ -1,6 +1,7 @@
 
 
    var wins = 0;
+   var lose = 0;
    function playGame() {
      var cities, guessedLetter, guessedLetters, city, indexOfCity, cityUpper, cityUpperArray, correctGuessStr, underlineArray, remainingLetters, guessesRemaining;
      //function setUpGame() {
@@ -43,10 +44,11 @@
            console.log(targetCorrect);
 
 
-       // initialize number of wins
+       // initialize number of wins and losses
        var targetWins = document.getElementById("wins");
            targetWins.textContent = wins;
            console.log(targetWins);
+           document.getElementById('lose').textContent = lose;
 
        // initialize number of guesses remaining
        var guessesRemaining = 12;
@@ -98,6 +100,8 @@
              console.log("remainingLetters = " + remainingLetters);
              console.log("guesses that remain" + guessesRemaining);
              if(guessesRemaining === 0) {
+               lose++;
+               document.getElementById('lose').textContent = lose;
                playGame();
              } else if (userGuessStr === cityUpper) {
                wins++;
