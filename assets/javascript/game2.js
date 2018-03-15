@@ -111,28 +111,8 @@
 
          }
        }
-            // make user guess uppercase
+    
 
 }
 playGame();
-    //}
-    //}
-    //while (remainingLetters > 0);
-    //end loop for input of new letter
 
-
-                /*
-                    // compare with previous guesses
-                    for (var j = 0; j < pastUserGuess.length; j++) {
-                        if (uGuessUp === pastUserGuess[j]) {
-                            console.log("You already guessed that letter")
-                        }
-                        else
-                            // add current userGuess to past User Guesses
-                            pastUserGuess.splice(0, 0, uGuessUp);
-                            console.log(pastUserGuess);
-                            // print all the letters the user has guessed
-                            targetPastUGuess = document.getElementById("letters-already-guessed");
-                                targetPastUGuess.textContent = pastUserGuess;
-                                console.log(targetPastUGuess);
-                    } */
